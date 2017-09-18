@@ -9,10 +9,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-aoo.get('/atricle-one',function(req,res) {
+app.get('/atricle-one',function(req,res) {
     res.send('Aneroid one');
 });
-aoo.get('/atricle-two',function(req,res) {
+app.get('/atricle-two',function(req,res) {
     res.send('Best Phone');
 });   
 app.get('/ui/style.css', function (req, res) {
